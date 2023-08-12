@@ -85,15 +85,11 @@ function leerDatosCurso(a){
         //Agregamos el curso al carrito
         articulosCarrito = [...articulosCarrito, infoCurso];
     }
-    console.log(existe);
-
-
 
 
     //agrega elementos al arreglo de carrito
     
 
-    console.log(articulosCarrito);
 
     carritoHTML();
 }
@@ -109,7 +105,6 @@ function carritoHTML(){
 
     articulosCarrito.forEach( curso =>{
         const {imagen, titulo, precio, cantidad, id} = curso;
-        console.log(curso);
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>
